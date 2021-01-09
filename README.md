@@ -1,12 +1,10 @@
 # CodeMelon v1.0.0
-
+___________________________________________________________________________________________________________________________________________________________________________________
 Creator: Siddharth Vivek\
 Date: 09/january/2021
 
-Status:\
-CodeMelon can:
-1. Perform basic math operations using [+, -, /, *, ()]
-2. Pinpoint the following errors:
-    1. Syntax Error
-    2. Illegal Character Error
-    3. Runtime Error
+CodeMelon is my attempt at creating a small programming language within Python.\
+This was suggested by one of my friends as a challenge, and I decided to take the opportuinity to learn how programming languages work by creating one myself.\
+
+As of Commit #1, CodeMelon can perform basic mathematical problems: addition, subtraction, multiplication, division and can use parentheses to change the order of calculation. It can also pinpoint Syntax, Illegal Character and Runtime errors.\
+*Run the shell.py file
