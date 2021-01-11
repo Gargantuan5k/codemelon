@@ -1,0 +1,14 @@
+CodeMelon v0.3.0
+Changelog:
+
+1. Added if/then/elif/else statements
+    These can work with True/False/comparison operators
+    Nested if statements are supported. (if <cond1> then if <cond2> then <statement>)
+    Syntax:
+    if <expression> then <statement(s)> elif <expression> then <statement(s)> else <statement(s)>
+    Example:
+    var x = 10
+    var y = 40
+    if x == y then var z = 1 elif x > y then var z = 2 else var z = 3 will assign 3 to z
+
+2. Made some changes to Shell (Medium, Technical)
