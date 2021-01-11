@@ -1,4 +1,4 @@
-Changes in CodeMelon v1.1.0 (indev):
+Changes in CodeMelon v0.1.0 (indev):
 1. (Major) Added support for variables :
     Use the var keyword to assign values to variables.
     Variable names can contain A-Z, 0-9 and _
