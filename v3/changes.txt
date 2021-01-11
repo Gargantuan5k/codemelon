@@ -1,0 +1,8 @@
+CodeMelon v0.2.1 (indev)
+Changelog:
+
+1. Added comparison operators ('>', '<', '>=', '<=', '==', '!=')                            }
+2. Added booleans (represented by 0 for False and 1 for True)                               } Will be used in if/else statements in future versions.
+3. Added built-ins 'True' and 'False' for booleans (returns 1 and 0 respectively)           }
+4. Added the Null built-in (Returns 0)
+5. Made some changes to the Shell. (Minor)
