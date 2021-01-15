@@ -1,0 +1,26 @@
+Changelog for major update v0.4.0
+
+1. Added support for FOR and WHILE loops
+    • FOR loops:
+        Syntax:
+        for <cond1> to <cond2> step <stepCount> then <expr>
+    • WHILE loops:
+        Syntax:
+        while <condition> then <expr>
+
+2. Added the STRING datatype
+    Defined using '' or ""
+    Can be any ascii character
+    Can be assigned to variables and lists using the correct keywords.
+
+3. Added lists
+    Defined using square brackets []
+    Can contain INT or STRING datatypes
+    Lists support appension,concatenation, returning and deleting.
+        • Append using the '+' character. Example: [1, 2, 3] + 4 will return [1, 2, 3, 4]
+        •  Remove/delete using the '-' character followed by the index of the item. Example: [1, 2, 3] - 0 will return [2, 3].
+        • Concatenate using the '*' character followed by another list. Example: [1, 2, 3] * [4, 5, 6] will return [1, 2, 3, 4, 5, 6].
+        • Use the '/' character followed by item index to return an item from the list (without deleting it). Example: [1, 2, 3] / 0 will return 1.
+        • Use '-' after '/' to remove and return an item. (NOTE: Will add pop() builtin function to do this)
+
+4. (Minor) Made small changes to the Shell
