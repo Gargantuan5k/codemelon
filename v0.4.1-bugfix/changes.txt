@@ -1,0 +1,28 @@
+Changelog for CodeMelon v0.4.1
+
+♦ This update fixed one medium bug where if statements would not compare STRING datatypes.
+
+Error:
+    • Statements such as "if 'string1' == 'string2'" or "if 'string3' != 'string4'" would generate the following error message:
+
+    Traceback (most recent call last):
+    File <filename>, line [line no.], in <program>
+    Runtime Error: Illegal operation
+
+    if 'string1' == 'string2' then var z = "yes"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    OR
+
+    Traceback (most recent call last):
+    File <filename>, line [line no.], in <program>
+    Runtime Error: Illegal operation
+
+    if 'string3' != 'string4' then var z = "no"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Fix:
+    • Added functions get_comp_eq(self, other) and get_comp_ne(self, other) in class String(Value)
+    • Error fixed!
+
+♦ This was the only change in this update.
