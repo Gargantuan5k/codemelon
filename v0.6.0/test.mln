@@ -1,0 +1,32 @@
+while True then
+    print('Enter number 1')
+
+    var num1 = input_int()
+
+    print('Enter operator')
+    var op = input()
+
+    if op == 'finish' then
+        break
+        end
+
+    print('Enter number 2')
+    var num2 = input_int()
+
+    if op == '+' then
+        var ans = num1 + num2
+        print(ans)
+    elif op == '-' then
+        var ans = num1 - num2
+        print(ans)
+    elif op == '*' then
+        var ans = num1 * num2
+        print(ans)
+    elif op == '/' then
+        var ans = num1 / num2
+        print(ans)
+    else
+        print('Invalid operator!')
+        break
+        end
+    end
