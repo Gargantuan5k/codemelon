@@ -1,0 +1,130 @@
+CODEMELON 1.1.0 -- Guide to the syntax, and how to code in CodeMelon
+
+1. Datatypes and Variable Assignment:
+    • There are 5 datatypes in CodeMelon:
+    a) Number (includes integers, floats, long etc)
+    b) String
+    c) List
+    d) Function
+    e) BuiltInFunction (Consists of reserved or In-Built functions in CodeMelon, see '2. Built-ins')
+    ** Dedicated datatypes for Null, True and False will be added in a future release, for now they are represented by Number(0), Number(1) and Number(0) respectively.
+
+    • CodeMelon also supports lists and functions.
+
+    Variables can hold any datatype. Use the var keyword, followed by variable name and '=' sign followed by the value to assign to a variable.
+    There are no specific keywords for specific datatypes.
+    For example: var x = 10  <-- Assigns Number(10) to x
+                 var y = 'Lorem'  <-- Assigns String('Lorem') to y
+
+2. Operators:
+    • CodeMelon supports the addition (+), subtraction (-), multiplication (*), division (/), power (^), modulo (%) and integer-division (~), logical and comparison
+        operators as of version 1.1.0.
+    
+    • Operator precedence is as follows:
+        1. Parentheses ()
+        2. Exponent ^
+        3. Unary + and Unary -
+        4. Multiplication *, Division /, Integer Division ~, Modulus %
+        5. Binary + and Binary -
+        6. Comparisons ==, !=, >, <, >=, <=
+        7. Logical and, or, not
+
+3. Built-ins:
+    • The print() statement prints to the console. Can hold any datatype, variable or expression as arguments. Concatenate strings using '+'
+    • The input() statement takes user input, can assign to a variable using 'var'. The input_int() statement takes user input as a Number.
+        -> var userin1 = input('Enter a string')
+        -> var userin2 = input_int('Enter a number')
+
+        input() and input_int() take String('message') as an argument. The message may be any datatype. To have an empty message, use '' (empty string) as the argument.
+            For example:  var x = input('')
+
+    ♦ Type-Specific functions:
+        • is_num(item)/is_str(item)/is_list(item)/is_func(item) returns True if the item is of the type given in the function.
+        • get_type(item) returns the type of the given argument as a String.
+        • append(list_name, value) appends arg value to arg list_name
+        • pop(list_name) removes and returns the last item in the specified list
+        • extend(list1, list2) adds all items of list2 to the end of list1
+        • len(expr) returns the length of the given argument (Must be List or String)
+
+    ♦ Math functions:
+        • randint(start, end) returns a random integer between start and end (Both included). Both args must be or return type Number.
+        • math_sqrt(value) returns the square root of the given value or math expression. Arg must be or return a Number.
+        • math_floor(value) returns the greatest integer Number that is <= the given floating point value. Arg must be or return a Number.
+        • math_ceil(value) returns the greatest integer Number that is >= the given floating point value. Arg must be or return a Number.
+            -> For math_ceil() and math_floor(), the given argument is used as a float. Therefore, math_floor(1.2) will return 1 and math_floor(1) will also return 1.
+            -> Number(1) (Arg for math_floor() is used as Number(1.0) (Floating-point)
+        • math_floordiv(num1, num2) returns the quotient obtained on dividing num1 by num2. Both args must be or return Number.
+            -> The math_floordiv() function is deprecated as of v1.1.0, and has been replaced by the int-div '~' operator. This Built-in may be removed in a future update.
+        • mod(num1, num2) returns the remainder obtained on dividing num1 by num2. Both args must be or return Number.
+            -> The mod() function is deprecated as of v1.1.0, and has been replaced by the modulo '%' operator. This Built-in may be removed in a future update.
+        • math_sin(value) returns the sine of Number(value).
+        • math_cos(value) returns the cosine of Number(value).
+        • math_tan(value) returns the tangent of Number(value).
+
+    ♦ Misc.:
+        • cls() or clear() clears the output screen.
+            -> cls() and clear() will only clear the console/terminal if terminal is <stdout>, <stdin> and is not an integrated output terminal.
+        • run('filename.mln') cannot be used inside of a running program file. It must be used in the Shell console to run CodeMelon code from an external file.
+          The filename must be presented as a String (wrapped in '' or "") and must have the .mln extension to avoid a RunTimeError.
+          The absolute path to the file must be specified if the file is not in the same folder as CodeMelon and CodeMelon has not been added to the PATH environment variable.
+
+    ♦ Syntaxes for if/for/while/functions:
+        • For if statements, the syntax is as follows:
+        if condition then
+            <expr/statements>
+        elif condition then
+            <expr/statements>
+        elif condition then
+            <expr/statements>
+        else
+            <expr/statements>
+            end
+
+        -> You can use the elif statement as many times as required.
+
+        • For while loops, the syntax is as follows:
+            while condition then
+                <expr/statements>
+                break/continue  $ Optional
+                end
+
+        • For for loops, the syntax is as follows:
+            for variable = <start> to <end> then
+                <expr/statements>
+                end
+
+        • For function definitions, the syntax is as follows:
+            func func_name(param1, param2)
+                <expr/statements>
+                return <value>  $ Optional
+                end
+        • For single-line functions:
+            func func_name(param1, param2) -> <expr/statements>
+        • For all other block statements, simply do not use the 'end' keyword at the end of the single-line statement.
+
+        ** The 'end' keyword denotes the end of a statement block and can be called at any point inside the block.
+
+4. Commenting:
+    CodeMelon supports both single-line and multi-line comments.
+    • Single line comments are defined using  $  followed by the comment.
+    • Multiline comments are wrapped in # #
+
+    For example:
+        $ This is a single-line comment
+        # This is a
+          Multiline
+          comment #
+
+
+5. Conventions and enhancement:
+    CodeMelon uses the joined_lower naming convention for all datatypes. Additionally, Python's PEP-8 rules shall be followed wherever applicable and whenever they do not override
+    CodeMelon's own rules.
+
+    ** Tabs and spaces are ignored wherever possible, but should be used to improve readability.
+
+6. Miscellaneous:
+    • In the standard shell, type 'exit()' to exit the shell.
+    • In the standard shell, type '_syntax_' to view this file, '_about_' to view info, '_test_' to
+    view a sample codemelon program and _license_ to view the License and Copyright for CodeMelon.
+
+    ** Point 2 under Miscellaneous is an addition in v1.1.0

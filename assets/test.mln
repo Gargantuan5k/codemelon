@@ -1,0 +1,32 @@
+$ Simple calculator program in CodeMelon
+
+func calculate(num1, op, num2)
+    if op == '+' then
+        return (num1 + num2)
+    elif op == '-' then
+        return (num1 - num2)
+    elif op == '*' then
+        return (num1 * num2)
+    elif op == '/' then
+        return (num1 / num2)
+    elif op == '%' then
+        return (num1 % num2)
+    elif op == '~' then
+        return (num1 ~ num2)
+    else
+        return ('Not a valid operator')
+    end
+end
+
+while True then
+    var num1 = input_int('Enter number 1: ')
+    var op = input('Enter an operator: ')
+
+    if op == 'exit' then
+        break
+    end
+
+    var num2 = input_int('Enter number 2: ')
+
+    print(calculate(num1, op, num2))
+end

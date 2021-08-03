@@ -1,0 +1,13 @@
+CODEMELON VERSION 1.1.0
+
+Created by: Siddharth Vivek
+GitHub Repository: https://github.com/Gargantuan5k/codemelon/
+GitHub Profile: https://github.com/Gargantuan5k/
+
+License: BSD-2 Clause License
+(C) Siddharth Vivek, 2021
+Version: {version}
+
+x---x SOURCE CODE/RELEASES: https://github.com/Gargantuan5k/codemelon/releases/ x---x 
+
+ALL RIGHTS RESERVED.
